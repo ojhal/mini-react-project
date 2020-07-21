@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import Demo from './Demo';
 ReactDOM.render(
   <React.StrictMode>
-    <Demo />
+    <Demo name='ojhal patwa' />,
   </React.StrictMode>,
   document.getElementById('root')
 );
