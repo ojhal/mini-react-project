@@ -7,6 +7,7 @@ import Avatar from './Avatar';
 ReactDOM.render(
   <React.StrictMode>
     <Avatar />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
