@@ -4,6 +4,17 @@ import 'tachyons';
 
 import Avatarlist from './Avatarlist';
 class Avatar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "Welcome to Avatar World"
+    }
+  }
+  nameChange() {
+    this.setState({
+      name: "Web Communication"
+    })
+  }
   render() {
     const Avatarlistarray = [
       {
@@ -29,7 +40,7 @@ class Avatar extends Component {
     ]
 
     const avatararraycard = Avatarlistarray.map((avatarcard, i) => {
-      return <Avatarlist id={Avatarlistarray[i].name}
+      return <Avatarlist key={i} id={Avatarlistarray[i].name}
         name={Avatarlistarray[i].name}
         work={Avatarlistarray[i].work} />
 
@@ -37,9 +48,9 @@ class Avatar extends Component {
 
     return (
       <div className="design">
-        <h1> Welcome to Avatar World</h1>
+        <h1>{this.state.name}</h1>
         {avatararraycard}
-        <button>Subscribe</button>
+        <button onClick={() => this.nameChange()}>Subscribe</button>
       </div>
     )
   }
