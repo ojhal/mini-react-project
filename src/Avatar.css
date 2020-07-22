@@ -2,3 +2,15 @@
   width: 200;
   height: 200px;
 }
+
+.design {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.design h1 {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
